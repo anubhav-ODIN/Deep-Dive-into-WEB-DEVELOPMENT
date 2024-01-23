@@ -1,0 +1,46 @@
+.container{
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand{
+    color: rgb(226, 217, 217);
+}
+.row-mt-4 {
+    width: 200px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    overflow: hidden;
+}
+
+.col-lg-4 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bgimage {
+    height:100vh;
+    background: url('https://t4.ftcdn.net/jpg/06/27/09/51/240_F_627095108_IW9XCWVzkxVua2yrwZ2QMa0uI8kHtTTk.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+    color: rgb(99, 98, 93);
+    font-family: 'Pacifico', cursive;
+}
+
+
+.hero_desc {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Pacifico', cursive;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
