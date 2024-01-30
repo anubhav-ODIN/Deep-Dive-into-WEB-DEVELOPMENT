@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(rgb(219, 73, 73), rgb(66, 223, 66), rgb(63, 63, 232));
+            color: white;
+            font-family: 'Overpass', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(rgb(195, 50, 50), rgb(39, 158, 39), rgb(54, 54, 206));
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c87f3;
+            height: 1.3px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background-color: rgb(205, 134, 42);
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: burlywood;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondsection box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection :vertical {
+            height: 94px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        footer {
+            background-color: aqua;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 112px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Soumya's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <Services href="/">Services</a>
+                    </li>
+                    <li>
+                        <Contact href="/">Contact</a>
+                    </li>
+                    <li>
+                        <About href="/">About</a>
+                    </li>
+                    <li>
+                        <FAQ href="/">FAQ</a>
+                    </li>
+                    <li>
+                        <Home href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi My Name is <span class="purple">Soumya</span>
+                <div>I'm interested in software roles</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">download resume</button>
+                    <button class="btn">visit github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="photo.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what I have learnt so far</span>
+            <h1>learning Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-text">
+                        JAVA (2017-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        I learnt JAVA as part of my school curriculum. 
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-text">
+                        C++ (2021-2024)
+                    </div>
+                    <div class="vertical-desc">
+                       I was passionate and excited to learn competitive programming.Hence I learnt C++.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-text">
+                        HTML (2024-PRESENT)
+                    </div>
+                    <div class="vertical-desc">
+                        I wanted to learn web development.Starting with the basics, I am currently learning HTML.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-text">
+                        JAVASCRIPT (2024-PRESENT)
+                    </div>
+                    <div class="vertical-desc">
+                         Continuing with my learning journey of web development, I am learning javascript.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>soumya's developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169; www.portfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web3.0', 'competitive programming', 'web development'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
