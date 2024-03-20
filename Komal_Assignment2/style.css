@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:110px;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg,#5d32de, #01dbf8,  #1a02f6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+.logo {
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  height: 70px;
+}
+
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.glitter-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color:#350dc7;
+  transition: color 0.3s;
+}
+.glitter-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f31212;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.glitter-link:hover {
+  color: #f31212;
+}
+.glitter-link:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+.nav-items a {
+  font-size: 20px;
+  font-family: 'Sriracha', cursive;
+  text-decoration: none;
+  padding: 35px 20px;
+}
+
+/* CSS for main section */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 590px;
+  background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.735) 0%,rgba(0, 255, 255, 0.5) 100%), url("./images/steps_to_take_chemical_engineer_careers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  transition: color 0.5s; 
+
+}
+.shine {
+            animation: shine 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes shine {
+            0% {
+                text-shadow: none;
+            }
+            100% {
+                text-shadow: 0 0 20px #72e3ff, 0 0 40px rgb(3, 62, 255), 0 0 60px #15ffe8;
+            }
+        }
+
+
+
+.intro p {
+  font-size: 20px;
+  color: #00a2ff;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+
+
+.intro button {
+  background-color: #0dabc7;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor:pointer;
+  transition: transform 0.5s ease;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+/* Hover effect */
+.intro button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #0dabc7;
+
+}
+
+
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  transition: transform 0.5s ease;
+}
+.achievements .work:hover {
+  transform: scale(1.2);
+  
+}
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  transition: transform 0.5s ease;
+}
+.achievements .work i {
+  font-size: 50px;
+  color: #191919;
+  border-radius: 50%;
+  border: 2px solid #191919;
+  padding: 12px;
+}
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #191919;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.events{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.special{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 179, 255);
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.special img {
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: cursive;
+}
+
+.special:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.overlay h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+
+
+}
+
+
+
+.pic{
+  padding: 10px;
+  border-radius: 5%;
+  height: 200px;
+  width: 200px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+  
+}
+.core {
+display:flex;
+flex-direction: column;
+justify-content: top;
+align-items: center;
+height: 300px;
+width: 400px;
+margin: 10px;
+background-color: #04c1f0;
+border-radius: 10%;
+overflow: hidden;
+}
+
+
+.photo {
+  border-radius: 50%;
+  height:100px;
+  width:100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+.contact-info {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 255, 213, 0.005); /* Adjust color and opacity */
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(100%); /* Initially hidden below the div */
+}
+.core:hover .contact-info {
+  transform: translateY(0); /* Reveal on hover */
+}
+
+
+
+
+.about-me h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #eeeeee;
+  font-size: 24px;
+    color: transparent;
+    background-image: linear-gradient(to right, black 50%, #eeeeee 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .about-me h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #eeeeee;
+      color: transparent;
+      background-image: linear-gradient(to right, black 50%, #eeeeee 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: background-position 0.5s ease-in-out;
+    }
+    
+
+    .about-me :hover h6{
+      background-position: 0;
+    }
+  .about-me :hover h3{
+    background-position: 0;
+  }
+
+
+.about-me-text h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  
+}
+
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f97eb;
+  padding: 40px 80px;
+}
+.footer .copy {
+  color: #fff;
+}
+
+
+
+.links p{
+  display: block;
+  color: #fff;
+  width: 150px;
+}
+
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.bottom-links .links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+.enlarge-svg {
+  width: 100px; /* Initial size */
+  transition: transform 0.3s ease-in-out;
+}
+.enlarge-svg:hover {
+  transform: scale(2); /* Enlarge by 20% */
+}
