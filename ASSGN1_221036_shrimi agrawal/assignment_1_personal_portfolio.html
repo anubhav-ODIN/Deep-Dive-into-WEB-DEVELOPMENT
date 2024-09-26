@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="assign_1_design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="p6.jpg" class="logo">
+        <ul>
+          <li><a href='#Home'>Home</a></li>
+          <li><a href='#About Me'>About Me</a></li>
+          <li><a href='#Contact'>Contact</a></li>
+        </ul>
+      </nav>
+      <div id="Home">
+      <div class="header-text">
+      <p>Coding Enthusiast</p>
+      <h1>Hi, I'm Shrimi Agrawal.</h1>
+    </div>
+    </div>
+  </div>
+  </div>
+<!-----------------------------ABOUT US-------------><div id="About Me">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src='p4.jpg'>
+        </div>
+      <div class="about-col-2">
+        <h1>About Me</h1>
+        <p>Hello! I'm Shrimi Agrawal, a passionate coding enthusiast with a love for turning ideas into lines of code. My journey in the world of programming began at the age of 13 where i ended up learning C++ in school.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>HTML/CSS</span><br>designing websites</li>
+            <li><span>Python</span><br>designing ML models</li>
+            <li><span>C++/C</span><br>programming</li>
+            <li><span>Matlab</span><br>Optimizing Chemical problems</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>2022-present</span><br>Undergrad at IIT,Kanpur in Chemical Engineering</li>
+            <li><span>2019-2021</span><br>Completed 12th standard at Pioneer Convent,Indore</li>
+            <li><span>2018-2019</span><br>completed high school at Advanced Academy,Indore</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>Project4</span><br>Intro to Data science</li>
+            <li><span>project3</span><br>Deep dive into algorithmic trading</li>
+            <li><span>project2</span><br>empowering data science using mathematical tools</li>
+            <li><span>project1</span><br>PPOC project</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!---Contact page-->
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>shrimia22@iitk.ac.in</p>
+        <p><i class="fas fa-phone"></i>9407518232</p>
+      <div class="social-icons">
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      </div>
+      <br>
+      <a href="" class="btn">Download CV</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--javascript code-->
+<script>
+   var tablinks = document.getElementsByClassName('tab-links');
+   var tabcontents = document.getElementsByClassName('tab-contents');
+   function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove('active-link');
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove('active-tab');
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+   
+</body>
+</html>
