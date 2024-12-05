@@ -1,0 +1,27 @@
+body {
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#button{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:darkcyan;
+}
+.container {
+    background-color: darkcyan;
+    border-radius: 10px;
+    height:500px;
+}
+
+.card{
+margin: 10px;
+
+
+}
